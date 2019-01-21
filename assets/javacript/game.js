@@ -40,9 +40,14 @@
       console.log("Computer guess: " + computerGuess);
 
     }
-    if((guessCount <= 0)){
+    // if((guessCount <= 0)){
       
-    }
+    // }
+
+    winCount.textContent = wins;
+    lossCount.textContent = loss;
+    guessCount.textContent = guesses;
+    letterGuessed.textContent = userGuess;
   
   }
 
