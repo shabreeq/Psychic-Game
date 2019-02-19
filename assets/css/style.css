@@ -1,0 +1,12 @@
+.container{
+  background-image: url(../images/pexels-photo-110854.jpeg);
+
+  color: aliceblue;
+  font-size: 30px;
+}
+
+h1{
+  background-color: #7ddeeb;
+  margin: 0;
+  text-align: center;
+}

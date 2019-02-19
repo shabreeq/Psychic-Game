@@ -1,10 +1,10 @@
 
   var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-  var win = 0;
-  var loss = 0;
-  var guesses = 7;
-  var guessed = 0;
+  var win;
+  var loss;
+  var guesses;
+  var guessed;
 
 
   var winCount = document.getElementById("wins");
@@ -12,7 +12,7 @@
   var guessCount = document.getElementById("guessesLeft");
   var letterGuessed = document.getElementById("guessesSoFar");
 
-  // var user = document.getElementById("wins");
+ 
 
   document.onkeyup = function(event){
 
@@ -23,6 +23,11 @@
   
     // for (var i = 0; i < winCount.length; i++);{
     for (var i = 0; i < guessCount.length; i++);{
+
+    wins = 0;
+    loss = 0;
+    guessCount = 7;
+    guessed = 0;
   
     if((userGuess === computerGuess)){
      
@@ -40,11 +45,10 @@
       console.log("Computer guess: " + computerGuess);
 
     }
-    // if((guessCount <= 0)){
       
-    // }
+    
 
-    winCount.textContent = wins;
+    winCount.textContent = win;
     lossCount.textContent = loss;
     guessCount.textContent = guesses;
     letterGuessed.textContent = userGuess;
