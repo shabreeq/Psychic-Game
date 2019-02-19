@@ -6,7 +6,14 @@
 }
 
 h1{
-  background-color: #7ddeeb;
+  background-color: #b5d7db;
   margin: 0;
   text-align: center;
+  padding: 20px;
+}
+
+.rules{
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
 }

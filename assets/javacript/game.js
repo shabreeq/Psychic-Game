@@ -1,10 +1,11 @@
 
-  var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t', 'u', 'v', 'w', 'x', 'y', 'z'];
+  var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f'];
 
   var win;
   var loss;
   var guesses;
   var guessed;
+  var  guessCount;
 
 
   var winCount = document.getElementById("wins");
@@ -26,12 +27,12 @@
 
     wins = 0;
     loss = 0;
-    guessCount = 7;
     guessed = 0;
+    guessCount = 7;
   
     if((userGuess === computerGuess)){
      
-      win++
+      wins++
       guesses-- 
       console.log("User guess: " + userGuess);
       console.log("Computer guess: " + computerGuess);
@@ -45,17 +46,17 @@
       console.log("Computer guess: " + computerGuess);
 
     }
-      
-    
-
-    winCount.textContent = win;
+ 
+    winCount.textContent = wins;
     lossCount.textContent = loss;
     guessCount.textContent = guesses;
-    letterGuessed.textContent = userGuess;
+    letterGuessed.textContent = [userGuess];
+  
   
   }
+    
 
-  }
+}
   
 
  
